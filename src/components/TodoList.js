@@ -14,7 +14,7 @@ const TodoList = () => {
   const [keyword, setKeyword] = useState("");
 
   useEffect(() => {
-    () => setWatchTodoList(state.todos);
+    setWatchTodoList(state.todos);
   }, [state.todos]);
 
   const getTodoItem = ({ item: todo }) => {
